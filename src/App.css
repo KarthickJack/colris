@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+/* 1512 */
+/* 828 */
+
+html {
+  margin: 0;
+  padding: 0;
+  background: #FFFFFF;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.container {
+  position: relative;
+  top: 6vw;
+  left: 8vw;
+  width: 92vw;
+  /* background-position: center center; */
+  /* background-image: linear-gradient(90deg, green 15%, yellow 05%, black 50%); */
+  /* animation: spin 5s linear infinite;   */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg) scale(5);
+  }
+
+  to {
+    transform: rotate(360deg) scale(10);
+  }
+}
+
+.navbar {
+  z-index: 10;
+  position: relative;
+  width: 92vw;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 71px;
+}
+
+.menu-icon {
+  margin-right: 5vw;
+  display: none;
+}
+
+.nav-elements {
+  position: relative;
+  right: 5vw;
+}
+
+.nav-elements ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.nav-elements ul li:not(:last-child) {
+  margin-right: 4vw;
+}
+
+.nav-elements ul a {
+  font-size: 18px;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.nav-elements ul a.active {
+  color: #A9E435;
+  font-weight: 500;
+  position: relative;
+}
+
+.service-content {
+  margin-top: 30px;
+  width: 70vw;
+  display: grid;
+  grid-template:
+    "d1 d1 d3 d3 d4 d4"
+    "d2 d2 d3 d3 d4 d4"
+    "d5 d5 d6 d6 d7 d7";
+}
+
+.d1 {
+  grid-area: d1;
+}
+
+.d2 {
+  grid-area: d2;
+}
+
+.d3 {
+  grid-area: d3;
+  width: 20vw;
+  height: 20vw;
+  background-color: #FFFFFF;
+  border-radius: 50%
+}
+
+.d4 {
+  grid-area: d4;
+}
+
+.d5 {
+  grid-area: d5;
+}
+
+.d6 {
+  grid-area: d6;
+}
+
+.d7 {
+  grid-area: d7;
+}
+
+.todos {
+  width: 35vw;
+  height: 11vw;
+}
+
+.todos>h6 {
+  color: #FFFFFF;
+  font-size: 1.5vw;
+  margin: 0;
+}
+
+.todos>p,
+.rental>p {
+  color: #A9E435;
+  font-size: 1.2vw;
+}
+
+.rental {
+  border: 2px solid #FFFFFF;
+  margin: 10vw;
+  width: 30vw;
+  border-radius: 20px;
+}
+
+.rental>h6 {
+  color: #FFFFFF;
+  font-size: 1.5vw;
+  margin: 7vh 1vw 7vh 20vw;
+}
+
+.rental>p {
+  margin: 1vh 1vw;
+}
+
+.rental>p>button {
+  font-weight: bolder;
+  font-size: 1.2vw;
+  width: 100%;
+  height: 3vw;
+  color: #000000;
+  background-color: #A9E435;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 2vw;
+}
+
+@media (max-width: 768px) {
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-elements {
+    position: absolute;
+    right: 0;
+    top: 71px;
+    background-color: #FFFFFF;
+    width: 0px;
+    height: calc(100vh - 71px);
+    transition: all 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .nav-elements ul a {
+    color: #000000;
+  }
+
+  .nav-elements.active {
+    width: 200px;
+  }
+
+  .nav-elements ul {
+    flex-direction: column;
+  }
+
+  .nav-elements ul li {
+    margin-right: unset;
+    margin-top: 22px;
+  }
+
+  .nav-elements ul li:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .service-content {
+    margin-top: 30px;
+    width: 70vw;
+    display: grid;
+    grid-template:
+      "d1 d1 d1 d1 d1 d1"
+      "d2 d2 d2 d2 d2 d2"
+      "d3 d3 d3 d4 d4 d4";
+  }
+
+  .todos {
+    width: 70vw;
+    height: 20vw;
+  }
+
+  .todos>h6 {
+    font-size: 3vw;
+  }
+
+  .todos>p,
+  .rental>p {
+    font-size: 2.2vw;
+  }
+
+  .d3 {
+    margin-top: 5vw;
+    width: 40vw;
+    height: 40vw;
+  }
+
+  .rental {
+    margin: 18vw 10vw;
+    width: 70vw;
+  }
+
+  .rental>h6 {
+    font-size: 2.5vw;
+    margin: 8vh 1vw 8vh 50vw;
+  }
+
+  .rental>p {
+    margin: 2vh 3vw;
+  }
+  
+}
+
+@media (max-width: 300px) {
+  .logo {
+    max-width: 50vw;
+  }
+
+  .menu-icon {
+    max-width: 15vw;
+  }
+
+  .nav-elements.active {
+    width: auto !important;
+  }
+
+  .nav-elements ul {
+    margin: 0;
+    padding: 10vw;
+  }
+
+  .nav-elements ul a {
+    font-size: 12px;
+  }
+
+  .nav-elements ul li {
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+  }
+
+}
