@@ -53,6 +53,13 @@ body {
   height: 71px;
 }
 
+.socials{
+  padding-right: 12px;
+}
+.socials:hover{
+  cursor: pointer;
+}
+
 .menu-icon {
   margin-right: 5vw;
   display: none;
@@ -102,12 +109,13 @@ body {
 
 .d2 {
   grid-area: d2;
+  padding: 35px 0px;
 }
 
 .d3 {
   grid-area: d3;
-  width: 20vw;
-  height: 20vw;
+  width: 10vw;
+  height: 10vw;
   background-color: #FFFFFF;
   border-radius: 50%
 }
@@ -158,7 +166,7 @@ body {
 
 .rental {
   border: 2px solid #FFFFFF;
-  margin: 10vw;
+  margin: 5vw;
   width: 30vw;
   border-radius: 20px;
 }
@@ -176,12 +184,12 @@ body {
 .rental>p>button {
   font-weight: bolder;
   font-size: 1.2vw;
-  width: 100%;
+  width: 40%;
   height: 3vw;
-  color: #000000;
-  background-color: #A9E435;
+  color: #ffffff;
+  background-color: #000000;
   border-radius: 10px;
-  border: none;
+  border: 2px solid #A9E435;
   margin-bottom: 2vw;
 }
 .explore-button>button{
@@ -195,12 +203,30 @@ body {
   border: 2px solid #A9E435;
   margin-bottom: 2vw;
 }
+.rental>p>button:hover{
+  color: #000000;
+  background-color: #A9E435;
+  cursor: pointer;
+}
 
 .explore-button>button:hover{
   color: #000000;
   background-color: #A9E435;
   cursor: pointer;
 }
+
+.bottom-text {
+    /* position: absolute; */
+    bottom: 100%;
+    width: 100%;
+    /* padding: 50px; Add padding for spacing if needed */
+    color: #A9E435;
+}
+.bottom-text>h6 {
+  color: white;
+  font-size: 3vw;
+}
+
 
 @media (max-width: 768px) {
 
@@ -226,6 +252,17 @@ body {
     cursor: pointer;
   }
 
+  .bottom-text {
+    /* position: absolute; */
+    bottom: 100%;
+    width: 100%;
+    /* padding: 50px; Add padding for spacing if needed */
+    color: #A9E435;
+}
+.bottom-text>h6 {
+  font-size: 5vw;
+  color: white;
+}
   .service-content {
     margin-top: 30px;
     width: 70vw;
@@ -269,17 +306,6 @@ body {
     margin-right: 30px;
   }
 
-  
-
-  .reachUs-content {
-    margin-top: 50px;
-    width: 70vw;
-    display: grid;
-    grid-template:
-      "q1 q1 q1 q1 q1 q1"
-      "q2 q2 q2 q2 q2 q2"
-      "q3 q3 q3 q4 q4 q4";
-  }
 
   .todos {
     width: 70vw;
@@ -303,19 +329,19 @@ body {
   }
 
   .d3 {
-    margin-top: 5vw;
-    width: 30vw;
-    height: 30vw;
+    margin-top: 0vw;
+    width: 22vw;
+    height: 22vw;
   }
 
   .rental {
-    margin: 18vw 10vw;
+    margin: 2vw 6vw;
     width: 70vw;
   }
 
   .rental>h6 {
     font-size: 2.5vw;
-    margin: 8vh 1vw 8vh 50vw;
+    /* margin: 8vh 1vw 8vh 50vw; */
   }
 
   .rental>p {

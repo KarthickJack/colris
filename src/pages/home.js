@@ -1,4 +1,6 @@
 import React from 'react';
+// import Services from './pages/services';
+import Button from '../components/explore';
 
 const Home = () => {
     return (<div className='service-content'>
@@ -7,9 +9,7 @@ const Home = () => {
         <h1>Your BRAND'S</h1>
         <h1>Digital Evolution.</h1>
         <p>Elevate your brand with the Next Frontier of Out-Of-Home Advertising!</p>
-        <div className='explore-button'>
-        <button>Explore</button>
-        </div>
+        <Button/>
         </div>
 
     {/* <div className='d3'>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../components/contact';
 
 const services = () => {
   return (<div className='service-content'>
@@ -19,13 +20,12 @@ the market's finest screens.</p>
     <h6>Rental Ads</h6>
       <p>
         "Capture audience attention with captivating and subtle motion graphics on our exclusive public/private venues as per your budget. Buy our slots for as short as 900 minutes capturing 10% of the share of voice per day.</p>
-      <p><button>Book your Slot</button></p>
+        <div style={{ padding : 10 }}>
+    <Button/>
     </div>
     </div>
-    <div className='d4'/>
-    <div className='d5'/>
-    <div className='d6'/>
-    <div className='d7'/>
+    </div>
+
   </div>);
 };
 
