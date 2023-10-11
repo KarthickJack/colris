@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ea9c4ed4.css",
+    "main.js": "/static/js/main.e98d686a.js",
+    "static/js/787.bc95b0c9.chunk.js": "/static/js/787.bc95b0c9.chunk.js",
+    "static/media/colris.svg": "/static/media/colris.91d8ef8444e49014dd722b4ce01c8f00.svg",
+    "static/media/hamburger.svg": "/static/media/hamburger.82dd22b42bba6bad3517a9ffd158c970.svg",
+    "index.html": "/index.html",
+    "main.ea9c4ed4.css.map": "/static/css/main.ea9c4ed4.css.map",
+    "main.e98d686a.js.map": "/static/js/main.e98d686a.js.map",
+    "787.bc95b0c9.chunk.js.map": "/static/js/787.bc95b0c9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea9c4ed4.css",
+    "static/js/main.e98d686a.js"
+  ]
+}

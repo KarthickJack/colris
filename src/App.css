@@ -92,8 +92,8 @@ body {
   display: grid;
   grid-template:
     "d1 d1 d3 d3 d4 d4"
-    "d2 d2 d3 d3 d4 d4"
-    "d5 d5 d6 d6 d7 d7";
+    "d1 d1 d3 d3 d4 d4"
+    "d2 d2 d6 d6 d7 d7";
 }
 
 .d1 {
@@ -133,9 +133,20 @@ body {
   height: 11vw;
 }
 
+.todof {
+  width: 35vw;
+  height: 11vw;
+}
+
 .todos>h6 {
   color: #FFFFFF;
   font-size: 1.5vw;
+  margin: 0;
+}
+
+.todos>h1 {
+  color: #FFFFFF;
+  font-size: 4vw;
   margin: 0;
 }
 
@@ -173,12 +184,56 @@ body {
   border: none;
   margin-bottom: 2vw;
 }
+.explore-button>button{
+  font-weight: bolder;
+  font-size: 1.2vw;
+  width: 40%;
+  height: 3vw;
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 10px;
+  border: 2px solid #A9E435;
+  margin-bottom: 2vw;
+}
+
+.explore-button>button:hover{
+  color: #000000;
+  background-color: #A9E435;
+  cursor: pointer;
+}
 
 @media (max-width: 768px) {
 
   .menu-icon {
     display: block;
     cursor: pointer;
+  }
+
+  .explore-button>button{
+    font-weight: bolder;
+    font-size: 2.5vw;
+    width: 40%;
+    height: 7vw;
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 10px;
+    border: 2px solid #A9E435;
+    margin-bottom: 2vw;
+  }
+  .explore-button>button:hover{
+    color: #000000;
+    background-color: #A9E435;
+    cursor: pointer;
+  }
+
+  .service-content {
+    margin-top: 30px;
+    width: 70vw;
+    display: grid;
+    grid-template:
+      "d1 d1 d1 d1 d1 d1"
+      "d2 d2 d2 d2 d2 d2"
+      "d3 d3 d3 d3 d3 d3";
   }
 
   .nav-elements {
@@ -214,23 +269,32 @@ body {
     margin-right: 30px;
   }
 
-  .service-content {
-    margin-top: 30px;
+  
+
+  .reachUs-content {
+    margin-top: 50px;
     width: 70vw;
     display: grid;
     grid-template:
-      "d1 d1 d1 d1 d1 d1"
-      "d2 d2 d2 d2 d2 d2"
-      "d3 d3 d3 d4 d4 d4";
+      "q1 q1 q1 q1 q1 q1"
+      "q2 q2 q2 q2 q2 q2"
+      "q3 q3 q3 q4 q4 q4";
   }
 
   .todos {
     width: 70vw;
     height: 20vw;
   }
+  .todof {
+    width: 70vw;
+    height: 20vw;
+  }
 
   .todos>h6 {
     font-size: 3vw;
+  }
+  .todos>h1 {
+    font-size: 8vw;
   }
 
   .todos>p,
@@ -240,8 +304,8 @@ body {
 
   .d3 {
     margin-top: 5vw;
-    width: 40vw;
-    height: 40vw;
+    width: 30vw;
+    height: 30vw;
   }
 
   .rental {
@@ -266,7 +330,7 @@ body {
   }
 
   .menu-icon {
-    max-width: 15vw;
+    max-width: 10vw;
   }
 
   .nav-elements.active {

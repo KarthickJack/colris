@@ -17,18 +17,21 @@ const Navbar = () => {
         <Hamburger className="menu-icon" onClick={handleShowNavbar} />
         <div className={`nav-elements  ${showNavbar && 'active'}`} onClick={handleShowNavbar}>
           <ul>
+          <li>
+              <Link to="/home">Home</Link>
+            </li>
             <li>
               <Link to="/services">Services</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/book_slots">Book Slots</Link>
-            </li>
+            </li> */}
             <li>
               <Link to="/reach_us">Reach Us</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/help">help</Link>
-            </li>
+            </li> */}
             {/* <li>
               <Link to="/">Get Started</Link>
             </li> */}
