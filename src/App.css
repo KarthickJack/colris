@@ -22,7 +22,7 @@ body {
 
 .container {
   position: relative;
-  top: 6vw;
+  top: 2vw;
   left: 8vw;
   width: 92vw;
   /* background-position: center center; */
@@ -62,6 +62,7 @@ body {
 
 .menu-icon {
   margin-right: 5vw;
+  max-width: 3vw;
   display: none;
 }
 
@@ -82,7 +83,7 @@ body {
 
 .nav-elements ul a {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
   color: #FFFFFF;
   text-decoration: none;
 }
@@ -102,6 +103,36 @@ body {
     "d1 d1 d3 d3 d4 d4"
     "d2 d2 d6 d6 d7 d7";
 }
+.home-content {
+  width: 100%;
+  /* margin-top: 0.5vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
+.home-content>hero{
+  font-size: 4.5vw;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.home-content>hero-green{
+  font-size: 6vw;
+  color: #A9E435;
+  font-weight: 900;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.home-content>p{
+  font-size: 1vw;
+  font-weight: 100;
+  color: #ffffff;
+  font-family: 'Courier New', Courier, monospace;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  letter-spacing: 3px;}
 
 .d1 {
   grid-area: d1;
@@ -227,13 +258,14 @@ body {
   font-size: 3vw;
 }
 
+.logo {
+  min-width: 12vw;
+  max-width: 12vw;
+}
+
 
 @media (max-width: 768px) {
 
-  .menu-icon {
-    display: block;
-    cursor: pointer;
-  }
 
   .explore-button>button{
     font-weight: bolder;
@@ -272,6 +304,35 @@ body {
       "d2 d2 d2 d2 d2 d2"
       "d3 d3 d3 d3 d3 d3";
   }
+.home-content {
+      margin-top: 2vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+.home-content>hero{
+    font-size: 4.5vw;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+.home-content>hero-green{
+    font-size: 6vw;
+    color: #A9E435;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+.home-content>p{
+    font-size: 1.5vw;
+    font-weight: 100;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    letter-spacing: 1.5px;}
+  
 
   .nav-elements {
     position: absolute;
@@ -347,16 +408,24 @@ body {
   .rental>p {
     margin: 2vh 3vw;
   }
+  .logo {
+    max-width: 18vw;
+  }
+  .menu-icon {
+    max-width: 4vw;
+    display: block;
+    cursor: pointer;
+  }
   
 }
 
 @media (max-width: 300px) {
   .logo {
-    max-width: 50vw;
+    max-width: 40vw;
   }
 
   .menu-icon {
-    max-width: 10vw;
+    max-width: 5vw;
   }
 
   .nav-elements.active {
