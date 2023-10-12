@@ -7,6 +7,7 @@ import Services from './pages/services';
 import BookSlots from './pages/bookSlots';
 import ReachUs from './pages/reachUs';
 import Help from './pages/help';
+import Retail from './pages/retail';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path='/book_slots' element={<BookSlots />} />
           <Route path='/reach_us' element={<ReachUs />} />
           <Route path='/help' element={<Help />} />
+          <Route path='/retail' element={<Retail />} />
           <Route path='/' element={<Home />} />
         </Routes>
       </div>

@@ -7,7 +7,7 @@
 html {
   margin: 0;
   padding: 0;
-  background: #FFFFFF;
+  background: #000000;
 }
 
 body {
@@ -17,14 +17,15 @@ body {
   width: 100vw;
   font-family: 'Poppins', sans-serif;
   overflow: hidden;
-  background-color: #000000;
+  /* background-color: #000000; */
 }
 
 .container {
-  position: relative;
-  top: 2vw;
-  left: 8vw;
-  width: 92vw;
+   margin-left: 80px;
+    margin-top: 20px;
+    margin-right: 80px;
+
+  /* width: 92vw; */
   /* background-position: center center; */
   /* background-image: linear-gradient(90deg, green 15%, yellow 05%, black 50%); */
   /* animation: spin 5s linear infinite;   */
@@ -48,9 +49,20 @@ body {
 
 .nav-container {
   display: flex;
+  margin-right: 40px;
   justify-content: space-between;
   align-items: center;
   height: 71px;
+}
+
+.serv-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 71px;
+  width: 300px;
+
 }
 
 .socials{
@@ -61,8 +73,8 @@ body {
 }
 
 .menu-icon {
-  margin-right: 5vw;
-  max-width: 3vw;
+  margin-right: 60px;
+  max-width: 15px;
   display: none;
 }
 
@@ -82,7 +94,7 @@ body {
 }
 
 .nav-elements ul a {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 300;
   color: #FFFFFF;
   text-decoration: none;
@@ -96,16 +108,25 @@ body {
 
 .service-content {
   margin-top: 30px;
-  width: 70vw;
+  width: 100%;
   display: grid;
   grid-template:
-    "d1 d1 d3 d3 d4 d4"
-    "d1 d1 d3 d3 d4 d4"
-    "d2 d2 d6 d6 d7 d7";
+    "d1 d1 d1 d2 d2 d2"
+    "d1 d1 d1 d2 d2 d2"
+    "d1 d1 d1 d2 d2 d2";
 }
+.service-centre-content{
+  width: 100%;
+  margin-top: 4vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .home-content {
   width: 100%;
-  /* margin-top: 0.5vh; */
+  margin-top: 2vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -118,6 +139,13 @@ body {
   font-weight: 700;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.service-centre-content>hero{
+  font-size: 28px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .home-content>hero-green{
   font-size: 6vw;
   color: #A9E435;
@@ -134,13 +162,30 @@ body {
   align-items: center;
   letter-spacing: 3px;}
 
+  .service-centre-content>p{
+    font-size: 15px;
+    color: #A9E435;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    max-width: 80vw;
+    text-align: center;
+  }
+
+  .circle {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    background-color: #ffffff; /* Set the background color */
+    border-radius: 50%; /* Create a circle by setting border-radius to 50% */
+  }
+
 .d1 {
   grid-area: d1;
 }
 
 .d2 {
   grid-area: d2;
-  padding: 35px 0px;
 }
 
 .d3 {
@@ -168,7 +213,7 @@ body {
 }
 
 .todos {
-  width: 35vw;
+  width: 50vw;
   height: 11vw;
 }
 
@@ -224,10 +269,12 @@ body {
   margin-bottom: 2vw;
 }
 .explore-button>button{
-  font-weight: bolder;
-  font-size: 1.2vw;
-  width: 40%;
-  height: 3vw;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5vw;
+  width: 100%;
+  padding: 5px;
+  height: 4vw;
+  width: 8vw;
   color: #ffffff;
   background-color: #000000;
   border-radius: 10px;
@@ -268,16 +315,20 @@ body {
 
 
   .explore-button>button{
-    font-weight: bolder;
-    font-size: 2.5vw;
-    width: 40%;
-    height: 7vw;
-    color: #ffffff;
-    background-color: #000000;
-    border-radius: 10px;
-    border: 2px solid #A9E435;
-    margin-bottom: 2vw;
+
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5vw;
+  width: 100%;
+  padding: 5px;
+  height: 5vw;
+  width: 8vw;
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 5px;
+  border: 2px solid #A9E435;
+  margin-bottom: 2vw;
   }
+
   .explore-button>button:hover{
     color: #000000;
     background-color: #A9E435;
@@ -331,6 +382,8 @@ body {
     justify-content: center;
     align-content: center;
     align-items: center;
+    text-align: center;
+    max-width: 150px;
     letter-spacing: 1.5px;}
   
 
@@ -340,7 +393,7 @@ body {
     top: 71px;
     background-color: #FFFFFF;
     width: 0px;
-    height: calc(100vh - 71px);
+    height: 30 vh;
     transition: all 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
     overflow: hidden;
     border-radius: 12px;
@@ -351,7 +404,9 @@ body {
   }
 
   .nav-elements.active {
-    width: 200px;
+    width: 145px;
+    height: 280px;
+    margin-right: 20px;
   }
 
   .nav-elements ul {
@@ -415,10 +470,20 @@ body {
     max-width: 4vw;
     display: block;
     cursor: pointer;
-  }
-  
 }
 
+.container {
+  margin-left: 40px;
+   margin-top: 20px;
+   margin-right: 40px;
+
+ /* width: 92vw; */
+ /* background-position: center center; */
+ /* background-image: linear-gradient(90deg, green 15%, yellow 05%, black 50%); */
+ /* animation: spin 5s linear infinite;   */
+}
+
+}
 @media (max-width: 300px) {
   .logo {
     max-width: 40vw;
@@ -429,7 +494,7 @@ body {
   }
 
   .nav-elements.active {
-    width: auto !important;
+    width: nav-elements;
   }
 
   .nav-elements ul {
