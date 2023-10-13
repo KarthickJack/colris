@@ -48,6 +48,12 @@ body {
   background-color: #A9E435; /* Set the line color */
 }
 
+.nav-back{
+  z-index: -1;
+  color: #000000;
+  opacity: 50%;
+}
+
 .hero-image{
   margin-top: -156px;
   margin-left: -7px;

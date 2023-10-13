@@ -11,6 +11,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
+      <div className='nav-back'></div>
       <div className="nav-container">
         <Brand className="logo" />
         <Hamburger className="menu-icon" onClick={handleShowNavbar} />
