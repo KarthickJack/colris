@@ -393,10 +393,24 @@ body {
   max-width: 12vw;
 }
 
+.bottom-text-para{
+  font-size: 1.5vw;
+}
+
+.foot-container{
+  margin-top: 25px;
+}
+
 
 @media (max-width: 768px) {
 
-
+  .bottom-text-para{
+    font-size: 1.5vw;
+  }
+  
+  .foot-container{
+    margin-top: 25px;
+  }
   .explore-button>button{
 
      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -423,8 +437,8 @@ body {
     /* padding: 50px; Add padding for spacing if needed */
     color: #A9E435;
 }
-.bottom-text>p{
-font-size: 3vw;
+.bottom-text-para{
+  font-size: 3vw;
 }
 .bottom-text>h6 {
   font-size: 6vw;

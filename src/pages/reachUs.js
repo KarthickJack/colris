@@ -9,10 +9,10 @@ const ReachUs = () => {
     <section id="`contact`" className='bottom-text'>
       <div class="line"></div>
     <h6>Colris Digital Private Ltd.</h6>
-      <p>1049, Nesamani Nagar, Asaripallam road, Nagercoil.</p>
-      <p>+91 7598 153 159</p>
-      <p>info@colris.com</p>
-      {/* <div className="foot-container"> */}
+      <div className='bottom-text-para'>1049, Nesamani Nagar, Asaripallam road, Nagercoil.</div>
+      <div className='bottom-text-para'>+91 7598 153 159</div>
+      <div className='bottom-text-para'>info@colris.com</div>
+      <div className="foot-container">
         {socialMedia.map((social, index) => (
           <img className='socials'
             key={social.id}
@@ -22,7 +22,7 @@ const ReachUs = () => {
             onClick={() => window.open(social.link)}
           />
         ))}
-      {/* </div> */}
+      </div>
   </section>);
 };
 
