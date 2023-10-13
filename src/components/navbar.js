@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { NavLink as Link } from 'react-router-dom';
 import { ReactComponent as Hamburger } from '../hamburger.svg'
 import { ReactComponent as Brand } from '../colris.svg'
 

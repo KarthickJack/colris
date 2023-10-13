@@ -6,12 +6,11 @@ import Home from './pages/home';
 import Services from './pages/services';
 import BookSlots from './pages/bookSlots';
 import ReachUs from './pages/reachUs';
-import Help from './pages/help';
+// import Help from './pages/help';
 import Retail from './pages/retail';
 
 function App() {
   return (
-    <Router>
       <div className="container">
         <Navbar />
         {/* <Routes>
@@ -29,7 +28,6 @@ function App() {
         <Retail />
         <ReachUs />
       </div>
-    </Router>
   );
 }
 

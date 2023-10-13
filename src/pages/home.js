@@ -1,7 +1,6 @@
 import React from 'react';
 // import Services from './pages/services';
 import Button from '../components/explore';
-import {dooh, hero} from "../assets";
 
 
 const Home = () => {

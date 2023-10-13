@@ -80,10 +80,13 @@ body {
 }
 
 .retail-container{
+  margin-top: 50px;
   display: flex;
   flex-direction: row;
 }
+
 .dooh-container{
+  margin-top: 50px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -245,7 +248,7 @@ body {
 }
 
   .service-centre-content>p{
-    font-size: 3vw;
+    font-size: 2vw;
     color: #A9E435;
     font-family: 'Poppins', sans-serif;
     justify-content: center;
