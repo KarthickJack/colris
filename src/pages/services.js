@@ -1,5 +1,7 @@
 import React from 'react';
-import Button from '../components/contact';
+import { NavLink as Link } from 'react-router-dom';
+import {dooh, retail} from "../assets";
+
 
 const services = () => {
   return (<div className='service-centre-content'>
@@ -33,12 +35,38 @@ the market's finest screens.</p>
     </div>
     </div>
     </div> */}
-    <div className='serv-container'>
-      <div className="circle"></div>
-      <div className="circle"></div>
-    </div>
 
-  </div>);
+
+
+
+{/*     
+    <div className='serv-container'>
+    <Link to="/book_slots">
+      <div className='icono'>
+        <div className="circle"></div>
+        <div className='title'>DOOH</div>
+      </div>
+      </Link>
+
+      <Link to="/retail">
+      <div className='icono'>
+        <div className="circle"></div>
+        <div className='title'>Retail Ads</div>
+      </div>
+      </Link>
+
+      <Link to="/reach_us">
+      <div className='icono'>
+        <div className="circle"></div>
+        <div className='title'>Creatives</div>
+      </div>
+      </Link>
+
+
+  </div>); */}
+</div>);
+
+
 };
 
 export default services;
