@@ -6,7 +6,8 @@ import {facebook, instagram, linkedin, twitter} from "../assets";
 const ReachUs = () => {
     return (  
 
-    <div className='bottom-text'>
+    <section id="`contact`" className='bottom-text'>
+      <div class="line"></div>
     <h6>Colris Digital Private Ltd.</h6>
       <p>1049, Nesamani Nagar, Asaripallam road, Nagercoil.</p>
       <p>+91 7598 153 159</p>
@@ -22,7 +23,7 @@ const ReachUs = () => {
           />
         ))}
       {/* </div> */}
-  </div>);
+  </section>);
 };
 
 const socialMedia = [

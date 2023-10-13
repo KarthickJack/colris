@@ -4,7 +4,7 @@ import {dooh, retail} from "../assets";
 
 
 const services = () => {
-  return (<div className='service-centre-content'>
+  return (<section id="`more`" className='service-centre-content'>
 
         <hero>What DOOH? Why DOOH?</hero>
         <p style={{ color: "#A9E435" }}>DOOH is modern advertising leveraging LED walls for dynamic, targeted, and measurable campaigns.</p>
@@ -64,7 +64,7 @@ the market's finest screens.</p>
 
 
   </div>); */}
-</div>);
+</section>);
 
 
 };

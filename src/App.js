@@ -14,7 +14,7 @@ function App() {
     <Router>
       <div className="container">
         <Navbar />
-        <Routes>
+        {/* <Routes>
           <Route path='/home' element={<Home />} />
           <Route path='/services' element={<Services />} />
           <Route path='/book_slots' element={<BookSlots />} />
@@ -22,7 +22,12 @@ function App() {
           <Route path='/help' element={<Help />} />
           <Route path='/retail' element={<Retail />} />
           <Route path='/' element={<Home />} />
-        </Routes>
+        </Routes> */}
+        <Home />
+        <Services />
+        <BookSlots />
+        <Retail />
+        <ReachUs />
       </div>
     </Router>
   );

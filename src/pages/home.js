@@ -5,7 +5,7 @@ import {dooh, hero} from "../assets";
 
 
 const Home = () => {
-    return (<div className='home-content'>
+    return (<section id="`home`" className='home-content'>
         <hero>Empowering Your BRAND'S</hero>
         <hero-green>Digital Evolution.</hero-green>
         <p>Elevate your brand with the Next Frontier of Out-Of-Home Advertising!</p>
@@ -20,7 +20,7 @@ const Home = () => {
     {/* <div className='d3'>
   
     </div> */}
-  </div>);
+  </section>);
   };
 
 export default Home;
