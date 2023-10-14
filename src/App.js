@@ -16,7 +16,7 @@ function App() {
         {/* <Services /> */}
         <BookSlots />
         <Retail />
-        <div class="line"></div>
+        <div className="line"></div>
         <ReachUs />
         </div>
   );

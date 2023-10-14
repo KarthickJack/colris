@@ -2,6 +2,13 @@ import React, { useState } from 'react';
 import { ReactComponent as Hamburger } from '../hamburger.svg'
 import { ReactComponent as Brand } from '../colris.svg'
 
+const menus = [
+  {id:'home', title: 'Home'},
+  {id:'dooh', title: 'DOOH'},
+  {id:'retail', title: 'Retail Ads'},
+  {id:'contact', title: 'Reach Us'}
+]
+
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false)
 
@@ -15,37 +22,9 @@ const Navbar = () => {
         <Brand className="logo" />
         <Hamburger className="menu-icon" onClick={handleShowNavbar} />
         <div className={`nav-elements  ${showNavbar && 'active'}`} onClick={handleShowNavbar}>
-          <ul>
-          <li>
-              <a href={`#home`}>Home</a>
-            </li>
-           
-            {/* <li>
-              <Link to="/services">Services</Link>
-              <a href={`#service`}>Domain</a>
-            </li> */}
-            <li>
-              {/* <Link to="/book_slots">DOOH</Link> */}
-              <a href={`#dooh`}>DOOH</a>
-            </li>
-            <li>
-              {/* <Link to="/retail">Retail Ads</Link> */}
-              <a href={`#retail`}>Retail Ads</a>
-            </li>
-            <li>
-              {/* <Link to="/reach_us">Reach Us</Link> */}
-              <a href={`#contact`}>Reach Us</a>
-            </li>
-
-
-
-
-            {/* <li>
-              <Link to="/help">help</Link>
-            </li> */}
-            {/* <li>
-              <Link to="/">Get Started</Link>
-            </li> */}
+          <ul>{menus.map(x => (<li key={x.id}>
+            <a href={`#${x.id}`}>{x.title}</a>
+          </li>))}
           </ul>
         </div>
         </div>

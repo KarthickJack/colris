@@ -5,17 +5,10 @@ import Button from '../components/explore';
 
 const Home = () => {
     return (<section id="home" className='home-content'>
-        <hero>Empowering Your BRAND'S</hero>
-        <hero-green>Digital Evolution.</hero-green>
+        <div className='hero'>Empowering Your BRAND'S</div>
+        <div className='hero-green'>Digital Evolution.</div>
         <p>Elevate your brand with the Next Frontier of Out-Of-Home Advertising!</p>
-        <div>
         <Button/>
-        </div>
-        
-
-    {/* <div className='d3'>
-  
-    </div> */}
   </section>);
   };
 
