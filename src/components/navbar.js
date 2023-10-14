@@ -11,14 +11,12 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className='nav-back'></div>
       <div className="nav-container">
         <Brand className="logo" />
         <Hamburger className="menu-icon" onClick={handleShowNavbar} />
         <div className={`nav-elements  ${showNavbar && 'active'}`} onClick={handleShowNavbar}>
           <ul>
           <li>
-              {/* <Link to="/home">Home</Link> */}
               <a href={`#home`}>Home</a>
             </li>
            
@@ -50,7 +48,7 @@ const Navbar = () => {
             </li> */}
           </ul>
         </div>
-      </div>
+        </div>
     </nav>
   )
 }
