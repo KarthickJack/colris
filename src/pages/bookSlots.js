@@ -4,7 +4,7 @@ import {dooh} from "../assets";
 
 const BookSlots = () => {
     return (
-        <section id="`dooh`" className='dooh-container'>
+        <section id="dooh" className='dooh-container'>
         <div className='retail-image'>
              <img src={dooh} alt="dooh" style={{'max-width': '45vw'}} />
         </div>

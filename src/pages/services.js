@@ -1,7 +1,7 @@
 import React from 'react';
 
 const services = () => {
-  return (<section id="`more`" className='service-centre-content'>
+  return (<section id="more" className='service-centre-content'>
 
         <hero>What DOOH? Why DOOH?</hero>
         <p style={{ color: "#A9E435" }}>DOOH is modern advertising leveraging LED walls for dynamic, targeted, and measurable campaigns.</p>

@@ -31,6 +31,10 @@ body {
   /* background-image: linear-gradient(90deg, green 15%, yellow 05%, black 50%); */
   /* animation: spin 5s linear infinite;   */
 }
+.start{
+  flex-direction: column;
+}
+
 
 @keyframes spin {
   from {
@@ -523,7 +527,7 @@ body {
     width: 0px;
     height: 30 vh;
     transition: all 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-    overflow: hidden;
+    /* overflow: hidden; */
     border-radius: 12px;
   }
 

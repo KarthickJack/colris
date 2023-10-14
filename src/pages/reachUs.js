@@ -6,7 +6,7 @@ import {facebook, instagram, linkedin, twitter} from "../assets";
 const ReachUs = () => {
     return (  
 
-    <section id="`contact`" className='bottom-text'>
+    <section id="contact" className='bottom-text'>
       <div class="line"></div>
     <h6>Colris Digital Private Ltd.</h6>
       <div className='bottom-text-para'>1049, Nesamani Nagar, Asaripallam road, Nagercoil.</div>

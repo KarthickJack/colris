@@ -4,7 +4,7 @@ import {retail} from "../assets";
 
 const Retail = () => {
     return (
-       <section id="`retail`" className='retail-container'>
+       <section id="retail" className='retail-container'>
         <div className='retail-image'>
              <img src={retail} alt="retail" style={{'max-width': '35vw'}} />
         </div>
