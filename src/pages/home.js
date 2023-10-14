@@ -9,9 +9,6 @@ const Home = () => {
         <hero-green>Digital Evolution.</hero-green>
         <p>Elevate your brand with the Next Frontier of Out-Of-Home Advertising!</p>
         <div>
-        {/* <div className='hero-image'>
-             <img src={hero} alt="hero" style={{width: '477px'}} />
-        </div> */}
         <Button/>
         </div>
         

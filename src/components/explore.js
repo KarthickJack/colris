@@ -1,7 +1,7 @@
 
 function Button() {
     return (
-      <a href={`#more`}>
+      <a href={`#dooh`}>
         <div className='explore-button'>
         <button>Explore</button>
         </div>

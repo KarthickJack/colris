@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Navbar from './components/navbar';
 import Home from './pages/home';
-import Services from './pages/services';
+// import Services from './pages/services';
 import BookSlots from './pages/bookSlots';
 import ReachUs from './pages/reachUs';
 // import Help from './pages/help';
@@ -12,13 +12,12 @@ function App() {
   return (
       <div className="container">
         <Navbar />
-        <div className= "start">
         <Home />
-        <Services />
+        {/* <Services /> */}
         <BookSlots />
         <Retail />
+        <div class="line"></div>
         <ReachUs />
-        </div>
         </div>
   );
 }

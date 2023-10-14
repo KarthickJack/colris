@@ -7,7 +7,6 @@ const ReachUs = () => {
     return (  
 
     <section id="contact" className='bottom-text'>
-      <div class="line"></div>
     <h6>Colris Digital Private Ltd.</h6>
       <div className='bottom-text-para'>1049, Nesamani Nagar, Asaripallam road, Nagercoil.</div>
       <div className='bottom-text-para'>+91 7598 153 159</div>

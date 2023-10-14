@@ -20,10 +20,10 @@ const Navbar = () => {
               <a href={`#home`}>Home</a>
             </li>
            
-            <li>
-              {/* <Link to="/services">Services</Link> */}
-              <a href={`#more`}>Domain</a>
-            </li>
+            {/* <li>
+              <Link to="/services">Services</Link>
+              <a href={`#service`}>Domain</a>
+            </li> */}
             <li>
               {/* <Link to="/book_slots">DOOH</Link> */}
               <a href={`#dooh`}>DOOH</a>
